@@ -40,7 +40,7 @@ const speaker = [
     personName: 'Yochai Benkler',
     personJob: `App Brewery, London's leading in-person programming bootcamp.`,
     persontext: `Welcome to the Complete Web Development Bootcamp, the only course you need to learn to code and become a full-stack web developer. With 150,000+ ratings and a 4.8 average`,
-  }
-]
+  },
+];
 
 export default speaker;
