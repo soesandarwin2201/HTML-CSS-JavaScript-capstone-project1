@@ -113,10 +113,14 @@ section {
 }
 
 .main-title {
- color: var(--main-color);
+ color: transparent;
  font-size: 5rem;
  font-weight: 900;
  width: 40vw;
+ background: url(./images/test.webp);
+ background-position: center center;
+ background-size: cover;
+ -webkit-background-clip: text;
 }
 
 .home-text {
