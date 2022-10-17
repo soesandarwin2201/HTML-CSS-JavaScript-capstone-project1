@@ -46,21 +46,24 @@
    </div>
 
    <!--main nav-->
-   <nav class="navbar desktop">
-     <a href="index.html"><img src="./images/logo1.png" alt="Udemy logo" class="logo"></a>
-    <ul class="nav-menu">
+   <nav class="navbar">
+     <a href="index.html"><img src="./images/logo1.png" alt="Udemy logo" class="logo desktop"></a>
+     
+    <ul id="nav-menu" class="nav-menu">
+      <i id="close-btn" class="uil uil-multiply close-btn mobile"></i>
      <li><a href="#about.html">About</a></li>
      <li><a href="#about.html">Program</a></li>
      <li><a href="#about.html">Join</a></li>
      <li><a href="#about.html">Sponsor</a></li>
      <li><a href="#about.html">News</a></li>
      <li><a href="#about.html" class="business">Udemy Business</a></li>
+     
     </ul>
   </nav>
 
-<div class="mobile">
+<nav id="toggle" class="mobile">
     <i class="uil uil-bars mobile-menu"></i>
-  </div>
+  </nav>
  
    <!--end of main nav --->
   </header>
@@ -246,7 +249,8 @@ your people</h1>
   </footer>
 
  </div>
- 
+  
+ <script src="./script.js"></script>
  
 
     <script
