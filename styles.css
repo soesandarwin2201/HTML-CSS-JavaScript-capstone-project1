@@ -253,7 +253,7 @@ section {
 }
 
 .speaker-text {
-  font-size: .9rem;
+  font-size: 0.9rem;
   opacity: 0.8;
 }
 
@@ -627,12 +627,12 @@ section {
   }
 
   .card-title {
-  font-size: 1rem;
-  font-weight: 400;
- }
+    font-size: 1rem;
+    font-weight: 400;
+  }
 
   .card-text {
-   width: 35vw;
+    width: 35vw;
   }
 
   .program-btn {
@@ -654,8 +654,8 @@ section {
   }
 
   .speaker-img {
-  width: 150px;
-  height: 150px;
+    width: 150px;
+    height: 150px;
   }
 
   .more-btn {
