@@ -21,6 +21,12 @@ body {
   font-size: 0.89rem;
   letter-spacing: 1.5;
   color: var(--black-color);
+  background: url(./images/hero-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
 }
 
 section {
@@ -106,20 +112,12 @@ section {
 }
 
 /* =======home section ======== */
-.home {
-  background: url(./images/hero-bg.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
-}
 
 .home-title {
   color: var(--main-color);
   font-size: 2.5rem;
   font-weight: 300;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 .main-title {
@@ -193,6 +191,11 @@ section {
   background: rgba(255, 255, 255, 0.107);
   padding: 2rem;
   margin-bottom: 2rem;
+  transition: all .4s ease;
+}
+
+.single-card:hover {
+  transform: translateY(-10px);
 }
 
 .card-title {
@@ -512,13 +515,20 @@ section {
     display: none;
   }
 
+  .navbar {
+    background: transparent;
+  }
+
   .mobile {
     display: block;
+    background: transparent;
   }
+
 
   .mobile-menu {
     font-size: 3rem;
     color: var(--black-color);
+    background: transparent;
   }
 
   .mobile-menu:hover {
@@ -724,8 +734,8 @@ section {
   }
 
   .about-brand {
-    background-color: var(--gray-color);
-    color: #000;
+    background-color: var(--black-color);
+    color: #fff;
   }
 
   .card-icon {
@@ -739,6 +749,29 @@ section {
   }
 
   .footer-text {
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
+
+  .about-footer {
+    background: var(--gray-color);
+    color: var(--black-color);
+  }
+}
+
+@media screen and  (min-width: 768px) and (max-width: 1500px) {
+
+  .about-title {
+    font-size: 3rem;
+    font-weight: 900;
+    width: 65vw;
+  }
+
+  .demo-wrapper {
+    font-size: 1.2rem;
+  }
+
+  .banner-text {
+    width: 65vw;
+  }
+  
 }
