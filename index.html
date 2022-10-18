@@ -12,13 +12,6 @@
  <!--css link-->
  <link rel="stylesheet" href="./styles.css">
 
- <!--bootstrap-->
- <!-- <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    /> -->
 </head>
 <body>
  <div class="main-wrapper">
@@ -46,21 +39,25 @@
    </div>
 
    <!--main nav-->
-   <nav class="navbar desktop">
-     <a href="index.html"><img src="./images/logo1.png" alt="Udemy logo" class="logo"></a>
-    <ul class="nav-menu">
-     <li><a href="#about.html">About</a></li>
-     <li><a href="#about.html">Program</a></li>
+   <nav class="navbar">
+     <a href="index.html"><img src="./images/logo1.png" alt="Udemy logo" class="logo desktop"></a>
+     
+    <ul id="nav-menu" class="nav-menu">
+      <i id="close-btn" class="uil uil-multiply close-btn mobile"></i>
+     <li><a href="index.html">Home</a></li>
+     <li><a href="about.html">About</a></li>
+     <li><a href="#program">Program</a></li>
      <li><a href="#about.html">Join</a></li>
      <li><a href="#about.html">Sponsor</a></li>
      <li><a href="#about.html">News</a></li>
      <li><a href="#about.html" class="business">Udemy Business</a></li>
+     
     </ul>
   </nav>
 
-<div class="mobile">
+<nav id="toggle" class="mobile">
     <i class="uil uil-bars mobile-menu"></i>
-  </div>
+  </nav>
  
    <!--end of main nav --->
   </header>
@@ -147,73 +144,7 @@ your people</h1>
   <section id="#feature" class="feature">
     <h2 class="program-title feature-title">Feature Speakers</h2>
     <div class="underlined"></div>
-    <div class="speaker-wrapper">
-      <!--single speaker-->
-     <article class="single-speaker">
-      <img src="./images/speaker1.png" alt="speaker 1" class="speaker-img">
-      <div class="speaker-info">
-        <h2 class="speaker-name">Yochai Benkler</h2>
-        <p class="speaker-job"> App Brewery, London's leading in-person programming bootcamp.</p>
-
-        <p class="speaker-text">Welcome to the Complete Web Development Bootcamp, the only course you need to learn to code and become a full-stack web developer. With 150,000+ ratings and a 4.8 average</p>
-      </div>
-     </article>
-      <!--end of single speaker-->
-      <!--single speaker-->
-     <article class="single-speaker">
-      <img src="./images/speaker1.png" alt="speaker 1" class="speaker-img">
-      <div class="speaker-info">
-        <h2 class="speaker-name">Yochai Benkler</h2>
-        <p class="speaker-job"> App Brewery, London's leading in-person programming bootcamp.</p>
-
-        <p class="speaker-text">Welcome to the Complete Web Development Bootcamp, the only course you need to learn to code and become a full-stack web developer. With 150,000+ ratings and a 4.8 average</p>
-      </div>
-     </article>
-      <!--end of single speaker-->
-      <!--single speaker-->
-     <article class="single-speaker">
-      <img src="./images/speaker1.png" alt="speaker 1" class="speaker-img">
-      <div class="speaker-info">
-        <h2 class="speaker-name">Yochai Benkler</h2>
-        <p class="speaker-job"> App Brewery, London's leading in-person programming bootcamp.</p>
-
-        <p class="speaker-text">Welcome to the Complete Web Development Bootcamp, the only course you need to learn to code and become a full-stack web developer. With 150,000+ ratings and a 4.8 average</p>
-      </div>
-     </article>
-      <!--end of single speaker-->
-      <!--single speaker-->
-     <article class="single-speaker">
-      <img src="./images/speaker1.png" alt="speaker 1" class="speaker-img">
-      <div class="speaker-info">
-        <h2 class="speaker-name">Yochai Benkler</h2>
-        <p class="speaker-job"> App Brewery, London's leading in-person programming bootcamp.</p>
-
-        <p class="speaker-text">Welcome to the Complete Web Development Bootcamp, the only course you need to learn to code and become a full-stack web developer. With 150,000+ ratings and a 4.8 average</p>
-      </div>
-     </article>
-      <!--end of single speaker-->
-      <!--single speaker-->
-     <article class="single-speaker">
-      <img src="./images/speaker1.png" alt="speaker 1" class="speaker-img">
-      <div class="speaker-info">
-        <h2 class="speaker-name">Yochai Benkler</h2>
-        <p class="speaker-job"> App Brewery, London's leading in-person programming bootcamp.</p>
-
-        <p class="speaker-text">Welcome to the Complete Web Development Bootcamp, the only course you need to learn to code and become a full-stack web developer. With 150,000+ ratings and a 4.8 average</p>
-      </div>
-     </article>
-      <!--end of single speaker-->
-      <!--single speaker-->
-     <article class="single-speaker">
-      <img src="./images/speaker1.png" alt="speaker 1" class="speaker-img">
-      <div class="speaker-info">
-        <h2 class="speaker-name">Yochai Benkler</h2>
-        <p class="speaker-job"> App Brewery, London's leading in-person programming bootcamp.</p>
-
-        <p class="speaker-text">Welcome to the Complete Web Development Bootcamp, the only course you need to learn to code and become a full-stack web developer. With 150,000+ ratings and a 4.8 average</p>
-      </div>
-     </article>
-      <!--end of single speaker-->
+    <div id="speaker-wrapper" class="speaker-wrapper">
      <button class="more-btn mobile">MORE <i class="uil uil-arrow-down more-icon"></i></button>
     </div>
    
@@ -246,7 +177,10 @@ your people</h1>
   </footer>
 
  </div>
- 
+  
+ <script src="./script.js" type="module"></script>
+
+
  
 
     <script

@@ -10,7 +10,6 @@
  margin: 0;
  padding: 0;
  box-sizing: border-box;
- list-style-type: none;
 }
 
 html {
@@ -77,6 +76,10 @@ section {
  gap: 2.5rem;
 }
 
+.nav-menu li {
+  list-style-type: none;
+}
+
 .nav-menu li a {
  text-decoration: none;
  color: var(--black-color);
@@ -113,14 +116,10 @@ section {
 }
 
 .main-title {
- color: transparent;
+ color: var(--main-color);
  font-size: 5rem;
  font-weight: 900;
  width: 40vw;
- background: url(./images/test.webp);
- background-position: center center;
- background-size: cover;
- -webkit-background-clip: text;
 }
 
 .home-text {
@@ -249,9 +248,11 @@ section {
 
 .home-footer {
  background-color: var(--black-color);
+ color: #fff;
 }
 .sponsor-wrapper {
  display: flex;
+ flex-wrap: wrap;
  align-items: center;
  gap: 1rem;
  margin-inline: 6rem;
@@ -265,7 +266,6 @@ section {
 }
 
 .card-icon {
- font-size: 2.5rem;
  color: var(--gray-color);
  width: 22%;
  opacity: .8;
@@ -290,12 +290,214 @@ section {
  opacity: .6;
 }
 
+/* =======about ======== */
+#about {
+ background: url(./images/hero-bg.png);
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ width: 100%;
+ height: 100vh;
+}
 
+.about-nav {
+ display: flex;
+ justify-content: flex-end;
+ align-self: flex-end;
+ margin-bottom: 1rem;
+}
 
+.about-nav li {
+ list-style-type: none;
+}
 
+.about-nav li a {
+ font-size: 1rem;
+ color: var(--black-color);
+ text-decoration: none;
+}
 
+.about-wrapper {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+}
 
+.about-title {
+ font-size: 4.5rem;
+ font-weight: 900;
+ width: 40vw;
+ line-height: 1.6;
+ background: url(./images/test.webp);
+ background-position: center center;
+ -webkit-background-clip: text;
+ color: transparent;
+}
 
+.demo-wrapper{
+  color: var(--black-color);
+  font-size: 1rem;
+  letter-spacing: 1.5;
+  line-height: 1.5;
+  background-color: #fff;
+}
+
+.demo {
+ font-size: 2rem;
+}
+
+.demo-list {
+ color: var(--black-color);
+}
+
+.banner-text {
+ margin-top: 2rem;
+ width: 45vw;
+ font-size: 1.2rem;
+ color: var(--black-color);
+ letter-spacing: 1.4;
+ line-height: 1.6;
+}
+
+.link {
+ font-size: 1.2rem;
+ color: var(--black-color);
+ letter-spacing: 1.4;
+ line-height: 1.6;
+ margin-top: 2rem;
+}
+
+.life {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ background: #fff;
+}
+
+.life-title {
+ font-size: 1.6rem;
+ color: var(--black-color);
+ font-weight: 400;
+}
+
+.life-text {
+ font-size: 1.1rem;
+ color: var(--black-color);
+ opacity: .6;
+ line-height: 1.5;
+ letter-spacing: 1.5;
+ margin-top: 1rem;
+ width: 50vw;
+ text-align: center;
+}
+
+.udemy-logo {
+ width: 20vw;
+ margin-top: 1rem;
+}
+
+/* ==== about course ======== */
+.course {
+  background-color: #eae2e2;
+}
+
+.course-title {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  opacity: .7;
+  margin-bottom: .5rem;
+  text-align: center;
+}
+
+.course-text {
+  font-size: .9rem;
+  margin-top: .5rem;
+  text-align: center;
+}
+
+.course-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.img-container {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 9px 19px -8px rgba(0,0,0,0.51);
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: 0.3s;
+  transform: scale(1);
+}
+
+.overlay {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-color: var(--main-color);
+  opacity: 0;
+  transition: 0.3s ease-in;
+}
+
+.img-container figcaption {
+  position: absolute;
+  z-index: 10;
+  text-align: center;
+  transition: all .3s ease-in-out;
+  padding: 1.2rem 1rem;
+}
+
+.img-container figcaption h1 {
+  opacity: 0;
+  transition: all .5s;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.img-title {
+  font-size: 1rem;
+  font-weight: 600;
+  transform: translate3d(0,-10px,0);
+}
+
+.img-container:hover img {
+  transform: scale(1.2);
+}
+
+.img-container:hover .overlay {
+  opacity: 0.8;
+}
+
+.img-container:hover {
+  transform: scale(1);
+  border: 5px solid rgba(255,255,255);
+  transition: 0.3s ease-in;
+}
+
+.img-container:hover h1 {
+  opacity: 1;
+  transform: scale(1);
+  border: 5px solid #fff;
+}
+
+.about-footer {
+  background-color: var(--black-color);
+  color: var(--gray-color);
+}
 
 
 
@@ -306,7 +508,6 @@ section {
 
    .mobile {
     display: block;
-    background: transparent;
    }
 
    .mobile-menu {
@@ -314,6 +515,51 @@ section {
     color: var(--black-color);
    }
 
+   .mobile-menu:hover {
+    color: var(--main-color);
+   }
+
+   .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--gray-color);
+    width: 100%;
+    height: 100vh;
+    gap: 0.5rem;
+    transform: translateX(-100%);
+    transition: all .4s ease;
+   }
+
+   .nav-menu li  {
+    padding: 1rem 2rem;
+   }
+
+   .nav-menu li a {
+    color: var(--black-color);
+    font-size: 1.5rem;
+   }
+
+   .nav-menu li:hover a{
+    padding-left: 2rem;
+   }
+
+   .close-btn {
+    color: #000;
+    position: absolute;
+    top: 38px;
+    right: 38px;
+    display: block;
+    font-size: 2rem;
+   }
+
+   .close-btn:hover {
+    font-size: 2.5rem;
+    color: var(--main-color);
+   }
    /* ======home section ===== */
    section {
     padding: 5% 2rem;
@@ -350,7 +596,7 @@ section {
     font-size: 1rem;
     letter-spacing: 1.5;
     line-height: 1.5;
-    opacity: .7;
+    /* opacity: .7; */
    }
 
    .date-time {
@@ -415,6 +661,65 @@ section {
     margin-left: 1rem;
    }
 
+   /* ====== about page========= */
+
+   .about-title {
+    font-size: 3rem;
+    font-weight: 900;
+    width: 85vw;
+   }
+   
+   .banner-text {
+    margin-top: 2rem;
+    width: 85vw;
+    font-size: 1.2rem;
+   }
+
+   .about-wrapper {
+    gap: 1.4rem;
+   }
+
+   .link {
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+   }
+
+   .life-title {
+    font-size: 1.8rem;
+    text-align: center;
+   }
+
+   .life-text {
+    width: 85vw;
+   }
+
+   .udemy-logo {
+    border: 1px solid #000;
+    width: 40vw;
+   }
+
+   .course-container {
+    flex-direction: column;
+   }
+
+   .about-brand {
+    background-color: var(--gray-color);
+    color: #000;
+   }
+
+   .card-icon {
+    width: 25%;
+   }
+
+   .footer-logo {
+    width: 5rem;
+    height: 5rem;
+    margin-right: 1rem;
+   }
+
+   .footer-text {
+    font-size: .7rem;
+   }
  
 
 
