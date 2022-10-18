@@ -231,6 +231,11 @@ section {
   margin-bottom: 4rem;
 }
 
+.speaker-img {
+  width: 180px;
+  height: 180px;
+}
+
 .speaker-info {
   width: 50%;
 }
@@ -248,7 +253,7 @@ section {
 }
 
 .speaker-text {
-  font-size: 1rem;
+  font-size: .9rem;
   opacity: 0.8;
 }
 
@@ -621,6 +626,15 @@ section {
     gap: 0.5rem;
   }
 
+  .card-title {
+  font-size: 1rem;
+  font-weight: 400;
+ }
+
+  .card-text {
+   width: 35vw;
+  }
+
   .program-btn {
     background-color: var(--main-color);
     color: #fff;
@@ -637,6 +651,11 @@ section {
 
   .single-speaker {
     width: 100%;
+  }
+
+  .speaker-img {
+  width: 150px;
+  height: 150px;
   }
 
   .more-btn {
