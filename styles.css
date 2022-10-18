@@ -120,6 +120,10 @@ section {
  font-size: 5rem;
  font-weight: 900;
  width: 40vw;
+ background: url(./images/test.webp);
+ background-position: center center;
+ -webkit-background-clip: text;
+ color: transparent;
 }
 
 .home-text {
