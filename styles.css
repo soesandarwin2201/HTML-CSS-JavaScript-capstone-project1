@@ -402,7 +402,105 @@ section {
  margin-top: 1rem;
 }
 
+/* ==== about course ======== */
+.course {
+  background-color: #eae2e2;
+}
 
+.course-title {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  opacity: .7;
+  margin-bottom: .5rem;
+  text-align: center;
+}
+
+.course-text {
+  font-size: .9rem;
+  margin-top: .5rem;
+  text-align: center;
+}
+
+.course-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.img-container {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 9px 19px -8px rgba(0,0,0,0.51);
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: 0.3s;
+  transform: scale(1);
+}
+
+.overlay {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-color: var(--main-color);
+  opacity: 0;
+  transition: 0.3s ease-in;
+}
+
+.img-container figcaption {
+  position: absolute;
+  z-index: 10;
+  text-align: center;
+  transition: all .3s ease-in-out;
+  padding: 1.2rem 1rem;
+}
+
+.img-container figcaption h1 {
+  opacity: 0;
+  transition: all .5s;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.img-title {
+  font-size: 1rem;
+  font-weight: 600;
+  transform: translate3d(0,-10px,0);
+}
+
+.img-container:hover img {
+  transform: scale(1.2);
+}
+
+.img-container:hover .overlay {
+  opacity: 0.8;
+}
+
+.img-container figcaption:hover {
+  transform: scale(1);
+  border: 5px solid rgba(255,255,255);
+  transition: 0.3s ease-in;
+}
+
+.img-container figcaption:hover h1 {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.about-footer {
+  background-color: var(--black-color);
+  color: var(--gray-color);
+}
 
 
 
