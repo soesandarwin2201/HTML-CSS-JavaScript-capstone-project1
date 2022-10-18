@@ -252,9 +252,11 @@ section {
 
 .home-footer {
  background-color: var(--black-color);
+ color: #fff;
 }
 .sponsor-wrapper {
  display: flex;
+ flex-wrap: wrap;
  align-items: center;
  gap: 1rem;
  margin-inline: 6rem;
@@ -268,7 +270,6 @@ section {
 }
 
 .card-icon {
- font-size: 2.5rem;
  color: var(--gray-color);
  width: 22%;
  opacity: .8;
@@ -352,7 +353,6 @@ section {
 
 .demo-list {
  color: var(--black-color);
- opacity: .7;
 }
 
 .banner-text {
@@ -486,15 +486,16 @@ section {
   opacity: 0.8;
 }
 
-.img-container figcaption:hover {
+.img-container:hover {
   transform: scale(1);
   border: 5px solid rgba(255,255,255);
   transition: 0.3s ease-in;
 }
 
-.img-container figcaption:hover h1 {
+.img-container:hover h1 {
   opacity: 1;
   transform: scale(1);
+  border: 5px solid #fff;
 }
 
 .about-footer {
@@ -511,7 +512,6 @@ section {
 
    .mobile {
     display: block;
-    background: transparent;
    }
 
    .mobile-menu {
@@ -665,6 +665,65 @@ section {
     margin-left: 1rem;
    }
 
+   /* ====== about page========= */
+
+   .about-title {
+    font-size: 3rem;
+    font-weight: 900;
+    width: 85vw;
+   }
+   
+   .banner-text {
+    margin-top: 2rem;
+    width: 85vw;
+    font-size: 1.2rem;
+   }
+
+   .about-wrapper {
+    gap: 1.4rem;
+   }
+
+   .link {
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+   }
+
+   .life-title {
+    font-size: 1.8rem;
+    text-align: center;
+   }
+
+   .life-text {
+    width: 85vw;
+   }
+
+   .udemy-logo {
+    border: 1px solid #000;
+    width: 40vw;
+   }
+
+   .course-container {
+    flex-direction: column;
+   }
+
+   .about-brand {
+    background-color: var(--gray-color);
+    color: #000;
+   }
+
+   .card-icon {
+    width: 25%;
+   }
+
+   .footer-logo {
+    width: 5rem;
+    height: 5rem;
+    margin-right: 1rem;
+   }
+
+   .footer-text {
+    font-size: .7rem;
+   }
  
 
 
