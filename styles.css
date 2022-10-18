@@ -191,7 +191,7 @@ section {
   background: rgba(255, 255, 255, 0.107);
   padding: 2rem;
   margin-bottom: 2rem;
-  transition: all .4s ease;
+  transition: all 0.4s ease;
 }
 
 .single-card:hover {
@@ -524,7 +524,6 @@ section {
     background: transparent;
   }
 
-
   .mobile-menu {
     font-size: 3rem;
     color: var(--black-color);
@@ -759,7 +758,6 @@ section {
 }
 
 @media screen and  (min-width: 768px) and (max-width: 1500px) {
-
   .about-title {
     font-size: 3rem;
     font-weight: 900;
@@ -773,5 +771,4 @@ section {
   .banner-text {
     width: 65vw;
   }
-  
 }
