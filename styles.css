@@ -76,6 +76,10 @@ section {
  gap: 2.5rem;
 }
 
+.nav-menu li {
+  list-style-type: none;
+}
+
 .nav-menu li a {
  text-decoration: none;
  color: var(--black-color);
@@ -112,10 +116,14 @@ section {
 }
 
 .main-title {
- color: var(--main-color);
+ color: transparent;
  font-size: 5rem;
  font-weight: 900;
  width: 40vw;
+ background: url(./images/test.webp);
+ background-position: center center;
+ -webkit-background-clip: text;
+ color: transparent;
 }
 
 .home-text {
