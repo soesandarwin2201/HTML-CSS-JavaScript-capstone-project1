@@ -1,0 +1,19 @@
+{
+  "name": "html-css-javascript-capstone-project1",
+  "version": "1.0.0",
+  "description": "> HTML-CSS-JavaScript-capstone-project1",
+  "main": "data.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soesandarwin2201/HTML-CSS-JavaScript-capstone-project1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soesandarwin2201/HTML-CSS-JavaScript-capstone-project1/issues"
+  },
+  "homepage": "https://github.com/soesandarwin2201/HTML-CSS-JavaScript-capstone-project1#readme"
+}
