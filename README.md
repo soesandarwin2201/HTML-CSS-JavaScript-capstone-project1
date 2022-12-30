@@ -12,9 +12,11 @@
 - Grid
 
 
-## Live Demo 
+## 🚀 Live Demo <a name="live-demo"></a>
 
-[Live Demo Link](https://soesandarwin2201.github.io/soesandarwin.github.io/)
+Click here to see the [Live Demo](https://soesandarwin2201.github.io/soesandarwin.github.io/) of the website 
+
+![](./images/html-css-javascript-capstone.png)
 
 
 ## Getting Started
