@@ -2,7 +2,6 @@
 
 > HTML-CSS-JavaScript-capstone-project1
 
-
 ## Built With
 
 - Html
